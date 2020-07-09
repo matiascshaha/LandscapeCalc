@@ -1,6 +1,18 @@
 <resources>
     <string name="app_name">LandscapeCalc</string>
     <string name="welcome_text">LandscapeCalc</string>
+    <string name="Gcd_Text">GCD</string>
+    <string name="LCM_Text">LCM</string>
+    <string name="setMath_Text">Set Math</string>
+    <string name="modularArithmetic_Text">Mod Aritmetic</string>
+    <string name="primeCount_Text">Prime Counting</string>
+    <string name="decimal_to_fraction_text">Decimal to Frac</string>
+    <string name="factorials_text">Factorials</string>
+    <string name="decimal_to_binary_text">Decimal to Binary</string>
+    <string name="decimal_to_hexadecimal_text">Decimal to Hexadecimal</string>
+    <string name="MAIN_ACTIVITY_Welcome_Message">Welcome to Landscape Calc</string>\
+    <string name="MAIN_ACTIVITY_PickAFunctions_String">Pick a Function</string>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFF</color>
+
 </resources>
