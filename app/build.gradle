@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 29
@@ -26,11 +27,17 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.android.support:support-annotations:28.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
+
     implementation  'pl.droidsonroids.gif:android-gif-drawable:1.2.3'
     //added to allow gif in splash screen
+    implementation 'com.google.firebase:firebase-analytics:17.4.4'
+    //added to allow for firebase analytics
+    implementation 'com.google.firebase:firebase-database:19.3.1'
+    // added to allow for firebase datbase
 
 }

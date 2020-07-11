@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "289786792010",
+    "firebase_url": "https://landscapecalctingzz.firebaseio.com",
+    "project_id": "landscapecalctingzz",
+    "storage_bucket": "landscapecalctingzz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289786792010:android:b0cf9a083076287fe2feb3",
+        "android_client_info": {
+          "package_name": "com.example.landscapecalc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "289786792010-mpo56nphffh3lrdegnkmnogpq7p7tdt2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVoNVGy5ZiGKhfLA1vOB6vABbouoJqwZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "289786792010-mpo56nphffh3lrdegnkmnogpq7p7tdt2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
