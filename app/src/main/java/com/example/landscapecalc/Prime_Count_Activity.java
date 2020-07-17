@@ -2,6 +2,7 @@ package com.example.landscapecalc;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +16,7 @@ public class Prime_Count_Activity extends AppCompatActivity {
 
     Button resetButton;
     Button primeButton;
+    Button backToMain2;
     TextView numOfPrimes;
     TextView inputNum;
     EditText enterNum;
@@ -26,6 +28,7 @@ public class Prime_Count_Activity extends AppCompatActivity {
 
         resetButton = findViewById(R.id.resetButton);
         primeButton = findViewById(R.id.primeButton);
+        backToMain2 = findViewById(R.id.backToMain2);
         numOfPrimes = findViewById(R.id.numOfPrimes);
         inputNum = findViewById(R.id.inputNum);
         enterNum = findViewById(R.id.enterNum);
@@ -69,6 +72,15 @@ public class Prime_Count_Activity extends AppCompatActivity {
                     inputNum.setText(enterNum.getText().toString());
                     numOfPrimes.setText(Integer.toString(counter));
                 }
+            }
+        });
+
+        backToMain2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(Prime_Count_Activity.this,
+                        MainActivity.class);
+                startActivity(myIntent);
             }
         });
     }

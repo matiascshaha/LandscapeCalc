@@ -8,7 +8,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Prime_Count_Activity"></activity>
+        <activity android:name=".Decimal_Frac_Activity"></activity>
+        <activity android:name=".Prime_Count_Activity" />
         <activity android:name=".Set_Math_Activity" />
         <activity android:name=".LCM_Activity" />
         <activity android:name=".GCD_Activity" />

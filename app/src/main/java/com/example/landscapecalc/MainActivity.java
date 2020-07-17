@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     Button LCM_Button;
     Button Set_Math_Button;
     Button Prime_Count_Button;
+    Button Decimal_Frac_Button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         LCM_Button = findViewById(R.id.LCM_Button);
         Set_Math_Button = findViewById(R.id.Set_Math_Button);
         Prime_Count_Button = findViewById(R.id.Prime_Count_Button);
+        Decimal_Frac_Button = findViewById(R.id.Decimal_Frac_Button);
 
         GCD_Button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +57,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(MainActivity.this, Prime_Count_Activity.class);
+                startActivity(myIntent);
+            }
+        });
+
+        Decimal_Frac_Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(MainActivity.this, Decimal_Frac_Activity.class);
                 startActivity(myIntent);
             }
         });

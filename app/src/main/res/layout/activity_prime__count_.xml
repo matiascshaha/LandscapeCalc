@@ -6,12 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".Prime_Count_Activity">
 
+    <Button
+        android:id="@+id/backToMain2"
+        android:layout_width="121dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="248dp"
+        android:text="Back to Main Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fractionIs" />
+
     <TextView
         android:id="@+id/display"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="35dp"
         android:layout_marginEnd="20dp"
         android:text="There are"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -38,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="178dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,8 +64,8 @@
         android:id="@+id/inputNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="110dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="132dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/numOfPrimes" />
