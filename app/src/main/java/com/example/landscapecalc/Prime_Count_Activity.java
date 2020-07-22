@@ -16,7 +16,6 @@ public class Prime_Count_Activity extends AppCompatActivity {
 
     Button resetButton;
     Button primeButton;
-    Button backToMain2;
     TextView numOfPrimes;
     TextView inputNum;
     EditText enterNum;
@@ -26,9 +25,11 @@ public class Prime_Count_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prime__count_);
 
+        //add support for back button for function activities
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         resetButton = findViewById(R.id.resetButton);
         primeButton = findViewById(R.id.primeButton);
-        backToMain2 = findViewById(R.id.backToMain2);
         numOfPrimes = findViewById(R.id.numOfPrimes);
         inputNum = findViewById(R.id.inputNum);
         enterNum = findViewById(R.id.enterNum);
@@ -75,14 +76,6 @@ public class Prime_Count_Activity extends AppCompatActivity {
             }
         });
 
-        backToMain2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntent = new Intent(Prime_Count_Activity.this,
-                        MainActivity.class);
-                startActivity(myIntent);
-            }
-        });
     }
 
     public boolean isPrime(int num){

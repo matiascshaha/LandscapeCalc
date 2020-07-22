@@ -35,6 +35,9 @@ public class GCD_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_g_c_d_);
 
+        //add support for back button for function activities
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         GCD_EditText = findViewById(R.id.GCD_Activity_EditText);
         Calculate_GCD_Button = findViewById(R.id.Calcuate_GCD_Button);
         Reset_Button = findViewById(R.id.Reset_Button);

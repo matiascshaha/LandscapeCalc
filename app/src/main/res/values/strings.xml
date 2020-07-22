@@ -14,9 +14,19 @@
     <string name="MAIN_ACTIVITY_PickAFunctions_String">Pick a Function</string>
     <string name="GCD_edit_text_default">Num1, Num2</string>
     <string name="GCD_Activity_Button_Text">Calculate GCD</string>
-    <string name="GCD_Activity_Reset_Button_Text">Reset</string>
+    <string name="Reset_Button_Text">Reset</string>
+    <string name="SetMath_EditText1Default">a,b,c,d</string>
+    <string name="SetMath_EditText2Default">c,d,e,f</string>
+    <string name="LCM_Activity_Button_Text">Calculate LCM</string>
+    <string-array name="SetMath_SpinnerArray">
+        <item>Union</item>
+        <item>Intersection</item>
+        <item>Difference</item>
+        <item>Symmetric Difference</item>
+    </string-array>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFF</color>
+
 
 
 </resources>

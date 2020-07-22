@@ -68,17 +68,4 @@
         app:layout_constraintStart_toEndOf="@+id/fractionIs"
         app:layout_constraintTop_toBottomOf="@+id/reset" />
 
-    <Button
-        android:id="@+id/backToMain"
-        android:layout_width="121dp"
-        android:layout_height="67dp"
-        android:layout_marginStart="146dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="144dp"
-        android:layout_marginBottom="297dp"
-        android:text="Back to Main Menu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fractionIs" />
 </androidx.constraintlayout.widget.ConstraintLayout>

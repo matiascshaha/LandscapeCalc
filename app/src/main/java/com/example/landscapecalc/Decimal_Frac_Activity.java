@@ -13,7 +13,6 @@ public class Decimal_Frac_Activity extends AppCompatActivity {
 
     Button reset;
     Button decToFrac;
-    Button backToMain;
     TextView fracDisplay;
     EditText enterDecimal;
 
@@ -22,11 +21,13 @@ public class Decimal_Frac_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_decimal__frac_);
 
+        //add support for back button for function activities
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         reset = findViewById(R.id.reset);
         decToFrac = findViewById(R.id.decToFrac);
         fracDisplay = findViewById(R.id.fracDisplay);
         enterDecimal = findViewById(R.id.enterDecimal);
-        backToMain = findViewById(R.id.backToMain);
 
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,14 +63,6 @@ public class Decimal_Frac_Activity extends AppCompatActivity {
             }
         });
 
-        backToMain.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntent = new Intent(Decimal_Frac_Activity.this,
-                        MainActivity.class);
-                startActivity(myIntent);
-            }
-        });
     }
 
     public int GCD(int one, int two){   //recursive implementation of GCD

@@ -12,48 +12,51 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:ems="10"
-        android:inputType="number"
+        android:inputType="textPersonName"
         android:text="@string/GCD_edit_text_default"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/Reset_Button"
+    <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="84dp"
-        android:text="@string/GCD_Activity_Reset_Button_Text"
-        app:layout_constraintBottom_toBottomOf="@+id/Calcuate_GCD_Button"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GCD_Activity_EditText">
 
-    <Button
-        android:id="@+id/Calcuate_GCD_Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="15dp"
-        android:text="@string/GCD_Activity_Button_Text"
-        app:layout_constraintEnd_toStartOf="@+id/Reset_Button"
-        app:layout_constraintTop_toBottomOf="@+id/GCD_Activity_EditText" />
+        <Button
+            android:id="@+id/Reset_Button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="60dp"
+            android:text="@string/Reset_Button_Text" />
+
+        <Button
+            android:id="@+id/Calcuate_GCD_Button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:text="@string/GCD_Activity_Button_Text" />
+    </LinearLayout>
 
     <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="428dp"
-        android:layout_marginEnd="1dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Reset_Button">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/textView4"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="TextView" />
+                android:layout_height="wrap_content"
+                android:text="        >>     HI MY NAME IS MATIAS PERICHON" />
         </LinearLayout>
     </ScrollView>
 
