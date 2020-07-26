@@ -8,16 +8,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Decimal_Frac_Activity"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Prime_Count_Activity"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Set_Math_Activity"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".LCM_Activity"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".GCD_Activity"
-            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Modulus_Activity"></activity>
+        <activity
+            android:name=".Decimal_Frac_Activity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Prime_Count_Activity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Set_Math_Activity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LCM_Activity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".GCD_Activity"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity" />
         <activity
             android:name=".Splash_Activity"
