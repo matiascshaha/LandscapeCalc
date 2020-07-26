@@ -148,6 +148,7 @@ public class GCD_Activity extends AppCompatActivity {
                     editor.remove("GCDarray_size");
                     for(int i = 0;i < GCD_PreviousCalculations.size(); i++)
                         editor.remove("GCDarray_" + i);
+                    editor.commit();
                     GCD_PrevCalculation_ListView.setAdapter(null);
                     GCD_PreviousCalculations = new ArrayList<>();
                 }

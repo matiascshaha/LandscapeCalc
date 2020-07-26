@@ -44,28 +44,20 @@
         app:layout_constraintStart_toEndOf="@+id/decToFrac"
         app:layout_constraintTop_toBottomOf="@+id/enterDecimal" />
 
-    <TextView
-        android:id="@+id/fractionIs"
+    <Button
+        android:id="@+id/Reset_PreviousCalculations_DecToFrac_Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="32dp"
-        android:text="The Fraction is"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="@string/Reset_Calculation_List"
+        app:layout_constraintTop_toBottomOf="@id/decToFrac"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/decToFrac" />
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-    <TextView
-        android:id="@+id/fracDisplay"
+    <ListView
+        android:id="@+id/DecToFrac_ListView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="190dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/fractionIs"
-        app:layout_constraintTop_toBottomOf="@+id/reset" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Reset_PreviousCalculations_DecToFrac_Button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

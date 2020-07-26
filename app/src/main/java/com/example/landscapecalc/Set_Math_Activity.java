@@ -83,6 +83,7 @@ public class Set_Math_Activity extends AppCompatActivity implements AdapterView.
                     editor.remove("SetMatharray_size");
                     for(int i = 0;i < SetMath_PreviousCalculations.size(); i++)
                         editor.remove("SetMatharray_" + i);
+                    editor.commit();
                     SetMath_ListView.setAdapter(null);
                     SetMath_PreviousCalculations = new ArrayList<>();
                 }

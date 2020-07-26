@@ -123,6 +123,7 @@ public class LCM_Activity extends AppCompatActivity {
                     editor.remove("LCMarray_size");
                     for(int i = 0;i < LCM_PreviousCalculations.size(); i++)
                         editor.remove("LCMarray_" + i);
+                    editor.commit();
                     LCM_ListView.setAdapter(null);
                     LCM_PreviousCalculations = new ArrayList<>();
                 }
