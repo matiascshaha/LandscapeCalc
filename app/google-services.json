@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "289786792010-r35fv5q4l72db9t064dti3cgtn1qfrjd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.landscapecalc",
+            "certificate_hash": "bd19793e0690a36bba6e0975589f6f87a549a946"
+          }
+        },
+        {
           "client_id": "289786792010-mpo56nphffh3lrdegnkmnogpq7p7tdt2.apps.googleusercontent.com",
           "client_type": 3
         }

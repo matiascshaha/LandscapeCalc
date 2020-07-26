@@ -18,6 +18,7 @@
     <string name="SetMath_EditText1Default">a,b,c,d</string>
     <string name="SetMath_EditText2Default">c,d,e,f</string>
     <string name="LCM_Activity_Button_Text">Calculate LCM</string>
+    <string name="Reset_Calculation_List">Reset Previous Calculations list</string>
     <string-array name="SetMath_SpinnerArray">
         <item>Union</item>
         <item>Intersection</item>

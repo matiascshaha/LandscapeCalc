@@ -55,4 +55,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/SetMathSpinner" />
+
+    <Button
+        android:id="@+id/SetMath_ResetCalc_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Reset_Calculation_List"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/SetSpinnerExpressionTextView"/>
+
+    <ListView
+        android:id="@+id/SetMath_ListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/SetMath_ResetCalc_Button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
