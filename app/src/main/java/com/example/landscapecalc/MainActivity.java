@@ -16,6 +16,9 @@ public class MainActivity extends AppCompatActivity {
     Button Decimal_Frac_Button;
     Button Modulus_Button;
     Button Dictionary_Button;
+    Button Factorial_Button;
+    Button Dec_2_Bin_Button;
+    Button Dec_2_Hex_Button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
         Decimal_Frac_Button = findViewById(R.id.Decimal_Frac_Button);
         Modulus_Button = findViewById(R.id.Modulus_Button);
         Dictionary_Button = findViewById(R.id.Dictionary_Button);
+        Factorial_Button = findViewById(R.id.Factorial_Button);
+        Dec_2_Bin_Button = findViewById(R.id.Decimal_Binary_Button);
+        Dec_2_Hex_Button = findViewById(R.id.Decimal_Hexadecimal_Button);
 
         GCD_Button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,6 +91,29 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(MainActivity.this, Dictionary_Activity.class);
+                startActivity(myIntent);
+            }
+        });
+        Factorial_Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(MainActivity.this, Factorial_Activity.class);
+                startActivity(myIntent);
+            }
+        });
+
+        Dec_2_Bin_Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(MainActivity.this, Dec_to_Binary_Activity.class);
+                startActivity(myIntent);
+            }
+        });
+
+        Dec_2_Hex_Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(MainActivity.this, Dec_To_Hex_Activity.class);
                 startActivity(myIntent);
             }
         });
