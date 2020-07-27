@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dictionary_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/GCD_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Gcd_Text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/GCD_Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/GCD_Description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/LCM_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/LCM_Text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/LCM_Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/LCM_Description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/empty2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/SetMath_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/setMath_Text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/SetMath_Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/SetMath_Description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/empty3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/Modular_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/modularArithmetic_Text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/Modular_Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Modular_Description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/empty4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/Prime_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/primeCount_Text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/Prime_Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Prime_Description"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/empty5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/DecimaltoFrac_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/decimal_to_fraction_text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/DecimaltoFrac_Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/DectoFrac_Description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/empty6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/Factorials_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/factorials_text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/Factorials_Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Factorial_Description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/empty7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/DecimaltoBinary_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/decimal_to_binary_text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/DecimaltoBinary_Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/DectoBin_Description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/empty8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/DecimaltoHex_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/decimal_to_hexadecimal_text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/DecimaltoHex_Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/DectoHex_Description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/empty9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

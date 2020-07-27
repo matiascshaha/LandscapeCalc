@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     Button Prime_Count_Button;
     Button Decimal_Frac_Button;
     Button Modulus_Button;
+    Button Dictionary_Button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         Prime_Count_Button = findViewById(R.id.Prime_Count_Button);
         Decimal_Frac_Button = findViewById(R.id.Decimal_Frac_Button);
         Modulus_Button = findViewById(R.id.Modulus_Button);
+        Dictionary_Button = findViewById(R.id.Dictionary_Button);
 
         GCD_Button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,6 +77,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(MainActivity.this, Modulus_Activity.class);
+                startActivity(myIntent);
+            }
+        });
+
+        Dictionary_Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(MainActivity.this, Dictionary_Activity.class);
                 startActivity(myIntent);
             }
         });

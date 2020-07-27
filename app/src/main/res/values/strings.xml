@@ -10,6 +10,7 @@
     <string name="factorials_text">Factorials</string>
     <string name="decimal_to_binary_text">Decimal to Binary</string>
     <string name="decimal_to_hexadecimal_text">Decimal to Hexadecimal</string>
+    <string name="dictionary_text">Dictionary</string>
     <string name="MAIN_ACTIVITY_Welcome_Message">Welcome to Landscape Calc</string>\
     <string name="MAIN_ACTIVITY_PickAFunctions_String">Pick a Function</string>
     <string name="GCD_edit_text_default">Num1, Num2</string>
@@ -25,6 +26,25 @@
         <item>Difference</item>
         <item>Symmetric Difference</item>
     </string-array>
+    <string name="GCD_Description">This function finds the greatest common
+        denominator of the two numbers entered</string>
+    <string name="LCM_Description">This function finds the least common
+        multiple of the two numbers entered</string>
+    <string name="SetMath_Description">This function expects two sets and will
+        manipulate the data of these sets, finding the union, intersection, difference,
+        and symmetric difference</string>
+    <string name="Modular_Description">This function tests the modular congruence of
+        two numbers and returns a true or false value</string>
+    <string name="Prime_Description">This function finds the number of primes less
+        than the given number</string>
+    <string name="DectoFrac_Description">This function calculates the fraction equivalent
+        to the decimal number that is entered</string>
+    <string name="Factorial_Description">This function calculates the factorial for
+        the number that is entered</string>
+    <string name="DectoBin_Description">This function calculates the binary equivalent
+        to the decimal number that is entered</string>
+    <string name="DectoHex_Description">This function calculates the hexadecimal equivalent
+        to the number that is entered</string>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFF</color>
 
