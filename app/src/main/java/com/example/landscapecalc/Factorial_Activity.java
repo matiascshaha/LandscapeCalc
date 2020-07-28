@@ -11,6 +11,9 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import java.math.BigInteger;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.ArrayList;
 
 public class Factorial_Activity extends AppCompatActivity {
@@ -75,12 +78,24 @@ public class Factorial_Activity extends AppCompatActivity {
                 }
                 if(numEntered > 1)
                 {
-                    int i,ans=1;
+                    int i;
+                    BigInteger ans= new BigInteger("1");
                     for(i=1;i<=numEntered;i++){
-                        ans=ans*i;
+                        ans=ans.multiply(BigInteger.valueOf(i));
                     }
 
-                    String final_output = "Factorial>> " + String.valueOf(numEntered) + "! = " + String.valueOf(ans);
+                    int digits = ans.toString().length();
+                    String newAns = "";
+
+                    if(digits >= 10){
+                        NumberFormat formatter = new DecimalFormat("0.####E0");
+                        newAns = formatter.format(ans);
+                    }
+                    else{
+                        newAns = ans.toString();
+                    }
+
+                    String final_output = "Factorial>> " + String.valueOf(numEntered) + "! = " + String.valueOf(newAns);
 
                     Factorial_PreviousCalculations.add(String.valueOf(final_output));
                     update_Factorial_SharedPreference();
