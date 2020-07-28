@@ -3,14 +3,18 @@ package com.example.landscapecalc;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
+import android.icu.text.DecimalFormat;
+import android.icu.text.NumberFormat;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import java.math.BigInteger;
 import java.util.ArrayList;
 
 public class Factorial_Activity extends AppCompatActivity {
@@ -20,6 +24,7 @@ public class Factorial_Activity extends AppCompatActivity {
     EditText enterNum;
     Button Reset_PreviousCalculationsFactorial_Button;
     ListView Factorial_ListView;
+    TextView factorial_display;
 
     public static final String PREFS_NAME= "com.example.landscapecalc";
 
@@ -33,7 +38,7 @@ public class Factorial_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_factorial_);
 
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //settings = getSharedPreferences(PREFS_NAME,0);
         //editor = settings.edit();
@@ -43,6 +48,7 @@ public class Factorial_Activity extends AppCompatActivity {
         enterNum = findViewById(R.id.Factorial_Activity_EditText);
         Factorial_ListView = findViewById(R.id.Factorial_previousCalculations);
         Reset_PreviousCalculationsFactorial_Button = findViewById(R.id.reset_FactorialCalculations_Button);
+        factorial_display = findViewById(R.id.factorial_display);
 
         /*if(settings.getInt("FactorialCountarray_size",-1) == -1)
         {
@@ -73,12 +79,23 @@ public class Factorial_Activity extends AppCompatActivity {
                             Toast.LENGTH_LONG).show();
                 }
                 if(numEntered > 1) {
-                    int i,ans=1;
+                    int i;
+                    BigInteger ans = new BigInteger("1");
                     for(i=1;i<=numEntered;i++){
-                        ans=ans*i;
+                        ans=ans.multiply(BigInteger.valueOf(i));
                     }
-                    Toast.makeText(getApplicationContext(), Integer.toString(ans),
-                            Toast.LENGTH_LONG).show();
+                    int digits = ans.toString().length();
+
+                    if(digits >= 10){   //scientific notation for numbers larger than 10 digits
+                        NumberFormat formatter = new DecimalFormat("0.#####E0");
+                        factorial_display.setText(formatter.format(ans));
+                    }
+                    else{
+                        factorial_display.setText(ans.toString());
+                    }
+
+                    /*Toast.makeText(getApplicationContext(), Integer.toString(ans),
+                            Toast.LENGTH_LONG).show();*/
 
                     /*Factorial_PreviousCalculations.add(Integer.toString(ans));
                     update_Factorial_SharedPreference();

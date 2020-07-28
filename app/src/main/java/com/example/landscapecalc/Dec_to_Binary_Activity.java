@@ -31,6 +31,8 @@ public class Dec_to_Binary_Activity extends AppCompatActivity {
         Dec_ListView = findViewById(R.id.Dec_previousCalculations);
         Reset_PreviousCalculationsDec_Button = findViewById(R.id.reset_DecCalculations_Button);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         resetButton.setOnClickListener(new View.OnClickListener() { //resets prime counter
             @Override
             public void onClick(View v) {

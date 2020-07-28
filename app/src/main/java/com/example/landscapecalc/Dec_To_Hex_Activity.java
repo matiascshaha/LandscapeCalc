@@ -23,6 +23,8 @@ public class Dec_To_Hex_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dec__to__hex_);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         resetButton = findViewById(R.id.Hex_Reset_Button);
         DecButton = findViewById(R.id.Calculate_Hex_Button);
         HexButton = findViewById(R.id.Calculate_Hex_2_Dec_Button);

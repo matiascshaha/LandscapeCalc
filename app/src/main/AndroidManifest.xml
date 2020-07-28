@@ -8,9 +8,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Dec_To_Hex_Activity"></activity>
-        <activity android:name=".Dec_to_Binary_Activity" />
-        <activity android:name=".Factorial_Activity" />
+        <activity
+            android:name=".Dec_To_Hex_Activity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".Dec_to_Binary_Activity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".Factorial_Activity"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".Dictionary_Activity"
             android:parentActivityName=".MainActivity" />

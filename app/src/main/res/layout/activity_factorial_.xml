@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Factorial_Activity_EditText">
 
@@ -39,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginEnd="15dp"
-            android:text="Calculate Factorial"/>
+            android:text="Calculate Factorial" />
     </LinearLayout>
 
     <Button
@@ -59,5 +60,17 @@
         app:layout_constraintTop_toBottomOf="@+id/reset_GCDCalculations_Button">
 
     </ListView>
+
+    <TextView
+        android:id="@+id/factorial_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="241dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset_FactorialCalculations_Button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
