@@ -53,11 +53,11 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"/>
 
     <ListView
-        android:id="@+id/Factorial_previousCalculations"
+        android:id="@+id/Factorial_ListView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reset_GCDCalculations_Button">
+        app:layout_constraintTop_toBottomOf="@+id/reset_FactorialCalculations_Button">
 
     </ListView>
 

@@ -94,13 +94,19 @@
         app:layout_constraintStart_toEndOf="@+id/modular_button"
         app:layout_constraintTop_toBottomOf="@+id/N" />
 
-    <TextView
-        android:id="@+id/TrueOrFalse"
+    <Button
+        android:id="@+id/Reset_Modular_PrevCalculations_Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="170dp"
-        android:layout_marginBottom="323dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="@string/Reset_Calculation_List"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/modular_button"/>
+
+    <ListView
+        android:id="@+id/Modulus_ListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Reset_Modular_PrevCalculations_Button" />
 </androidx.constraintlayout.widget.ConstraintLayout>

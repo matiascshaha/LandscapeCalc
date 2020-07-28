@@ -18,36 +18,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
+    <Button
+        android:id="@+id/Dec_Reset_Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginEnd="60dp"
+        android:text="@string/Reset_Button_Text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Dec_2_Bin_Activity_EditText">
+        app:layout_constraintTop_toBottomOf="@id/Dec_2_Bin_Activity_EditText"
+        tools:layout_editor_absoluteY="125dp" />
 
-        <Button
-            android:id="@+id/Dec_Reset_Button"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="60dp"
-            android:text="@string/Reset_Button_Text" />
+    <Button
+        android:id="@+id/Calculate_Dec_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:text="Convert to Binary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Dec_Reset_Button"
+        tools:layout_editor_absoluteY="125dp" />
 
-        <Button
-            android:id="@+id/Calculate_Dec_Button"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="15dp"
-            android:text="Convert to Binary" />
-
-        <Button
-            android:id="@+id/Calculate_Binary_Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Convert to Decimal" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/Calculate_Binary_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Convert to Decimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Calculate_Dec_Button"
+        tools:layout_editor_absoluteY="125dp" />
 
     <Button
         android:id="@+id/reset_DecCalculations_Button"
@@ -56,14 +58,15 @@
         android:text="@string/Reset_Calculation_List"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+        app:layout_constraintTop_toBottomOf="@id/Calculate_Binary_Button"
+        tools:layout_editor_absoluteY="125dp" />
 
     <ListView
         android:id="@+id/Dec_previousCalculations"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reset_GCDCalculations_Button">
+        app:layout_constraintTop_toBottomOf="@+id/reset_DecCalculations_Button">
 
     </ListView>
 </androidx.constraintlayout.widget.ConstraintLayout>

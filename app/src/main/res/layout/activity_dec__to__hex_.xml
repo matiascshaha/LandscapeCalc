@@ -59,13 +59,10 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"/>
 
     <ListView
-        android:id="@+id/Hex_previousCalculations"
+        android:id="@+id/DecToHex_ListView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reset_HexCalculations_Button">
-
-    </ListView>
+        app:layout_constraintTop_toBottomOf="@id/reset_HexCalculations_Button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
